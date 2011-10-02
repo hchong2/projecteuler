@@ -22,7 +22,7 @@ public class Problem11 {
 		}
 		// End of parse text
 		
-		
+		double startTime = System.currentTimeMillis();
 		int[][] grid = new int[20][20];
 		
 		//Store initial grid
@@ -39,8 +39,9 @@ public class Problem11 {
 		//Find max
 		int rowMax = Math.max(getMaxInRows(grid, 4), getMaxInRows(gridRotated90Degrees, 4));
 		int diagonalMax = Math.max(getMaxInDiagonals(grid, 4), getMaxInDiagonals(gridRotated90Degrees, 4));
-		
+		double endTime = System.currentTimeMillis();
 		System.out.println("Max: " + Math.max(rowMax, diagonalMax));
+		System.out.println("Time: " + (double)(endTime-startTime)/1000 +" seconds");
 	}
 
 	static int getMaxInRows(int[][] grid, final int factor) {

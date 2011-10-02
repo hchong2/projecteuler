@@ -20,6 +20,7 @@ public class Problem13 {
 			list.add(scan.nextLine().trim());
 		}
 		
+		double startTime = System.currentTimeMillis();
 		String answer = "";
 		int carryover = 0;
 		for(int i=49; i>=0; i--){
@@ -36,9 +37,10 @@ public class Problem13 {
 				answer = Integer.toString(carryover) + answer;
 			}
 		}
-		
+		double endTime = System.currentTimeMillis();
 		System.out.println("Sum: " + answer);
-		System.out.println("Digits: " + answer.length());
+		System.out.println("Number of digits: " + answer.length());
 		System.out.println("Answer: " + answer.substring(0,10));
+		System.out.println("Time: " + (double)(endTime-startTime)/1000 +" seconds");
 	}
 }

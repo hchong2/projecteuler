@@ -7,6 +7,7 @@ public class Problem12 {
 	 * http://projecteuler.net/problem=12
 	 */ 
 	public static void main(String[] args) {
+		double startTime = System.currentTimeMillis();
 		int triangleNumber = 0;
 		for(int i=1; true; i++){
 			triangleNumber += i;
@@ -17,6 +18,8 @@ public class Problem12 {
 				break;
 			}	
 		}
+		double endTime = System.currentTimeMillis();
+		System.out.println("Time: " + (double)(endTime-startTime)/1000 +" seconds");
 	}
 	static int numberOfDivisors(int number){
 		HashSet<Integer> set = new HashSet<Integer>();
