@@ -2,11 +2,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.Stack;
-
 
 public class Problem13 {
-
 	/**
 	 * Euler Project Problem 13
 	 * http://projecteuler.net/problem=13

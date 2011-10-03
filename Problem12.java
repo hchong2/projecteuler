@@ -1,7 +1,6 @@
 import java.util.HashSet;
 
 public class Problem12 {
-
 	/**
 	 * Euler Project Problem 12
 	 * http://projecteuler.net/problem=12
