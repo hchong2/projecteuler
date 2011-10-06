@@ -5,15 +5,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class Problem22 {
-
-	/**
-	 * 
-	 */
 	public static void main(String[] args) throws Exception{
 		List<String> nameList = new ArrayList<String>();
 		
 		//Read names from file
-		BufferedReader br = new BufferedReader(new FileReader("../Problem22.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("Problem22.txt"));
 		String line = br.readLine();
 		line = line.replaceAll("\"", "");
 		line = line.replaceAll(" ", "");
